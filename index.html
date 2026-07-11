@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Prank Page</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+  .container {
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+  .button {
+    margin-top: 20px;
+    padding: 15px 40px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<!-- Page 1 -->
+<div id="page1" class="container active">
+  <h1>connection is bad boy❌❌</h1>
+  <div class="button" onclick="goNext()">tap to get it</div>
+</div>
+
+<!-- Page 2 -->
+<div id="page2" class="container">
+  <h1>ha ha you are dumby😂😂😂</h1>
+</div>
+
+<script>
+function goNext() {
+  document.getElementById("page1").classList.remove("active");
+  document.getElementById("page2").classList.add("active");
+}
+</script>
+
+</body>
+</html>
